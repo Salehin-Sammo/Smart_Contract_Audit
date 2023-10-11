@@ -1,0 +1,58 @@
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Add shadow to the tooltip */
+}
+
+/* Value styling */
+.value {
+    font-size: 20px;
+    font-weight: bold;
+    fill: #434343; /* Fill color for value text */
+}
+
+/* Styling for the bottom chart */
+.bottom_chart{
+    width: 45%; /* Set width for the bottom chart */
+}
+
+/* Styling for the card data */
+.card_data{
+    width: 45%; /* Set width for the card data */
+}
+
+/* Styling for the parent container of chart cards */
+.chart_card_parent{
+    margin-top: 4%; /* Add margin at the top */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: center;
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    /* Adjust styling for chart card parent container */
+    .chart_card_parent{
+        display: flex;
+        justify-content: center; /* Center align items */
+    }
+
+    /* Adjust styling for the bottom chart */
+    .bottom_chart{
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    /* Adjust styling for the card data */
+    .card_data{
+        width: 90%; /* Adjust width for smaller screens */
+    }   
+}

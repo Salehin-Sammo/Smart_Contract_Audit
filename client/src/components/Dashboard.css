@@ -1,0 +1,541 @@
+/*Sariya Akhter Lura 103820052 
+Styling for the dashboard container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    background-image: url('images/dashboard.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+    flex-wrap: wrap; /* Allow the container to wrap its children */
+}
+
+/* Styling for the main heading */
+.dashboard-heading {
+    color: #52a0ba;
+    align-self: flex-start;
+    font-size: 60px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+/* Styling for the main paragraph */
+.dashboard-paragraph {
+    color: #f5f9fb;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: start; 
+    align-self: start;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 3px solid #52a0ba;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the main paragraph */
+.dashboard-paragraph:hover {
+    color: #747b7b;
+    transform: scale(1.02);
+}
+
+/* Styling for the subheading */
+.dashboard-heading2 {
+    color: #52a0ba;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #52a0ba;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Styling for the paragraphs with benefits */
+.dashboard-paragraph4 {
+    color: #f5f9fb;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: start;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Styling for the bold text within the benefit paragraphs */
+.dashboard-paragraph4 b {
+    color: #52a0ba;
+    font-size: 16px;
+}
+
+/* Adding a checkmark before each benefit point */
+.dashboard-paragraph4::before {
+    content: '✔';
+    color: #52a0ba;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .dashboard-heading2 {
+        font-size: 24px;
+        border-bottom: 1px solid #52a0ba;
+        padding-bottom: 5px;
+    }
+
+    .dashboard-paragraph4 {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .dashboard-paragraph4 b {
+        font-size: 16px;
+    }
+
+    .dashboard-paragraph4::before {
+        font-size: 16px;
+    }
+}
+
+/* Styling for the subheading */
+.dashboard-heading3 {
+    color: #52a0ba;
+    align-self: flex-start;
+    margin-top: 20px;
+    font-size: 24px;
+    border-bottom: 1px solid #52a0ba;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #4f5455;
+        border-bottom: 2px solid #4f5659;
+    }
+}
+
+/* Styling for the container of .dashboard-paragraph5 paragraphs */
+.paragraph-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Styling for the dashboard image */
+.dashboard-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+
+/* Styling for the "Our Services" section */
+.service {
+    color: #52a0ba;
+    align-self: center;
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgba(82, 160, 186, 0.1);
+        border-color: #52a0ba;
+        transform: scale(1.05);
+    }
+}
+
+/* Styling for each service box */
+.service-box {
+    background-color: rgba(24, 35, 46, 0.9); 
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(34, 43, 50, 0.1);
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the container of service boxes */
+.services-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Additional styling for service boxes (optional) */
+.service-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Styling for the service headings */
+.dashboard-paragraph5 {
+    color: #f5f9fb;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: rgba(82, 160, 186, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgba(82, 160, 186, 0.2);
+        transform: translateY(-3px);
+    }
+}
+
+/* Styling for the service descriptions */
+.dashboard-paragraph6 {
+    color: #f5f9fb;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background-color: rgba(82, 160, 186, 0.08);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgba(82, 160, 186, 0.15);
+        transform: translateY(-2px);
+    }
+}
+
+
+/* Styling for the "Request Audit" button */
+.request-audit-btn {
+    background-color: #52a0ba;
+    color: #f5f9fb;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+
+.request-audit-btn:hover {
+    background-color: #464e52;
+    transform: scale(1.05);
+}
+
+.request-audit-btn:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the "Request Analysis" button */
+.request-analysis-btn {
+    background-color: #52a0ba;
+    color: #f5f9fb;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+
+.request-analysis-btn:hover {
+    background-color: #464e52;
+    transform: scale(1.05);
+}
+
+.request-analysis-btn:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the "Contact" button */
+.contact-btn {
+    background-color: #52a0ba;
+    color: #f5f9fb;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #464e52;
+    transform: scale(1.05);
+}
+
+.contact-btn:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the "Contact" heading */
+.contact-heading {
+    color: #52a0ba;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+
+    /* Optional: gradient text */
+    background-image: linear-gradient(120deg, #52a0ba, #409c9a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* Hover effect to make it interactive - optional */
+.contact-heading:hover {
+    color: #3c515e; /* This will work with the gradient text, making it look interactive */
+}
+
+/* Styling for the "Contact" paragraph */
+.contact-paragraph{
+    color: #52a0ba;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1px;
+}
+
+/* Styling for the "Subscribe" heading */
+.subscribe-heading{
+    color: #52a0ba;
+    font-size: 30px;
+    margin-bottom: 1x; /* Add some space below the heading */
+}
+
+/* Styling for the "Subscribe" paragraph */
+.subscribe-paragraph{
+    color: #52a0ba;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1px;
+}
+
+/* Styling for the "Subscribe" email label */
+.subscribe-email {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #52a0ba;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+/* Styling for the "Subscribe" button */
+.subscribe-btn {
+    background-color: #52a0ba;
+    color: #f5f9fb;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+.subscribe-btn:hover {
+    background-color: #3c515e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.subscribe-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframes animation for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Styling for the "Subscribe" input field */
+.subscribe-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.subscribe-input:focus {
+    border-color: #52a0ba;
+}
+
+/* Animation for sliding in from the left */
+.dashboard-container * { 
+    animation: slideInFromLeft 1s forwards;
+}
+
+/* Common styling for dashboard headings */
+.dashboard-heading, .dashboard-heading2, .dashboard-heading3 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+
+/* Styling for the service section */
+.service {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Styling for the contact heading */
+.contact-heading {
+    font-size: 60px;
+    margin: 30px 0;
+}
+
+/* Styling for the subscribe heading */
+.subscribe-heading {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+/* Adjusted text alignment for paragraph4 */
+.dashboard-paragraph4 {
+    text-align: left;
+}
+
+/* Styling for service boxes */
+.service-box {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for dashboard image */
+.dashboard-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjusted font sizes for smaller screens */
+    .dashboard-heading, .dashboard-heading2, .dashboard-heading3 {
+        font-size: 30px;
+    }
+    .service {
+        font-size: 20px;
+    }
+    .contact-heading {
+        font-size: 40px;
+    }
+    .subscribe-heading {
+        font-size: 20px;
+    }
+    /* Adjusted text alignment and centering for smaller screens */
+    .dashboard-paragraph4 {
+        text-align: center;
+        align-self: center;
+    }
+    /* Full width for service boxes on smaller screens */
+    .service-box {
+        width: 100%;
+    }
+    /* Adjusted max width for dashboard image on smaller screens */
+    .dashboard-image {
+        max-width: 100%;
+    }
+}
+
+/* Styling for the auditing section */
+.auditing-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #17191b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Styling for each auditing step */
+.auditing-step {
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #191919;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+/* Styling for auditing step titles */
+.auditing-step h2 { 
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Hover effect for each auditing step */
+.auditing-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(39, 50, 55, 0.3);
+}
+
+/* Styling for auditing step titles */
+.auditing-title{
+    color: #bbc0c1;
+    align-self: flex-start;
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
