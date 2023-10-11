@@ -1,0 +1,9 @@
+### 
+
+POST http://localhost:8080/api/parseAndSave/save-report HTTP/1.1
+
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjk2NjI2OTc3LCJleHAiOjE2OTkyMTg5Nzd9.GTx-QH12Ak9X0xXlyLu0_bjmv5C4ziLcFOA7Ki3td-U, sammo
+
+{
+  "mdFilePath": "server/slither_output/1696571680651_result.md"
+}
