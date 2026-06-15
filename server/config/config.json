@@ -1,24 +1,5 @@
 {
-  "development": {
-    "username": "root",
-    "***REMOVED***": "***REMOVED***",
-    "database": "mydb",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": true
-  },
-  "test": {
-    "username": "root",
-    "***REMOVED***": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "***REMOVED***": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
+  "development": { "use_env_variable": "DATABASE_URL", "dialect": "mysql", "logging": true },
+  "test": { "use_env_variable": "DATABASE_URL", "dialect": "mysql" },
+  "production": { "use_env_variable": "DATABASE_URL", "dialect": "mysql" }
 }
